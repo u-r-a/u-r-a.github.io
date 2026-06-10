@@ -3,28 +3,39 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Chunhui Shi</title>
+  <title>Urania Shi</title>
   <style>
-    :root { color-scheme: light dark; }
+    :root {
+      color-scheme: light;
+      --bg: #f4ece0;
+      --text: #4a3b2c;
+      --heading: #5a4631;
+      --muted: #8a755c;
+      --accent: #a0673b;
+      --accent-hover: #82502a;
+      --rule: #d8c5ab;
+    }
     body {
       font-family: system-ui, -apple-system, sans-serif;
       max-width: 720px;
       margin: 4rem auto;
       padding: 0 1.25rem;
       line-height: 1.65;
+      background: var(--bg);
+      color: var(--text);
     }
-    h1 { margin-bottom: .25rem; }
-    .bio { color: #666; margin-top: 0; }
-    h2 { margin-top: 2.5rem; border-bottom: 1px solid #ddd; padding-bottom: .3rem; }
+    h1 { margin-bottom: .25rem; color: var(--heading); }
+    .bio { color: var(--muted); margin-top: 0; }
+    h2 { margin-top: 2.5rem; border-bottom: 1px solid var(--rule); padding-bottom: .3rem; color: var(--heading); }
     ul { list-style: none; padding: 0; }
     li { margin: .6rem 0; }
-    a { color: #0366d6; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-hover); text-decoration: underline; }
     .links a { margin-right: 1rem; }
   </style>
 </head>
 <body>
-  <h1>Chunhui Shi</h1>
+  <h1>Urania Shi</h1>
   <p class="bio">Researcher — [one-line bio: your focus / affiliation]</p>
   <p class="links">
     <a href="resume.pdf">Resume</a>
