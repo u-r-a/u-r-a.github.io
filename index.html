@@ -24,8 +24,16 @@
       background: var(--bg);
       color: var(--text);
     }
-    h1 { margin-bottom: .25rem; color: var(--heading); }
-    .bio { color: var(--muted); margin-top: 0; }
+    .intro { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+    .pfp {
+      width: 120px; height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--rule);
+      flex-shrink: 0;
+    }
+    h1 { margin-bottom: .25rem; margin-top: 0; color: var(--heading); }
+    .bio { color: var(--muted); margin-top: 0; margin-bottom: 0; }
     h2 { margin-top: 2.5rem; border-bottom: 1px solid var(--rule); padding-bottom: .3rem; color: var(--heading); }
     ul { list-style: none; padding: 0; }
     li { margin: .6rem 0; }
@@ -35,8 +43,13 @@
   </style>
 </head>
 <body>
-  <h1>Urania Shi</h1>
-  <p class="bio">Rising Junior with interests in Astronomy, AI/ML, and Physics</p>
+  <header class="intro">
+    <img class="pfp" src="pfp.png" alt="Urania Shi">
+    <div>
+      <h1>Urania Shi</h1>
+      <p class="bio">Rising Junior with interests in Astronomy, AI/ML, and Physics</p>
+    </div>
+  </header>
   <p class="links">
     <a href="resume.pdf">Resume</a>
     <a href="https://github.com/u-r-a">GitHub</a>
