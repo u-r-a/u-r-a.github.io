@@ -27,11 +27,13 @@
     .intro { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
     .pfp {
       width: 120px; height: 120px;
-      border-radius: 50%;
+      border-radius: 6px;
       object-fit: cover;
       border: 3px solid var(--rule);
       flex-shrink: 0;
+      order: 2;
     }
+    .intro > div { order: 1; }
     h1 { margin-bottom: .25rem; margin-top: 0; color: var(--heading); }
     .bio { color: var(--muted); margin-top: 0; margin-bottom: 0; }
     h2 { margin-top: 2.5rem; border-bottom: 1px solid var(--rule); padding-bottom: .3rem; color: var(--heading); }
